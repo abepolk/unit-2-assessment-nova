@@ -6,9 +6,7 @@ const controller = require('./controllers/todos.js')
 
 const PORT = process.env.port || 3000;
 
-const MONGOD0B_URI = process.env.MONGODB_URI || 'mongodb://localhost/unit-2-assessment'
-
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/abeslist';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/unit-2-assessment'
 
 // Connect to Mongo
 mongoose.connect(MONGODB_URI ,  { useNewUrlParser: true});
